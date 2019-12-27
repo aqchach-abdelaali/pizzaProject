@@ -1,0 +1,40 @@
+
+.bg-navigation {
+    background-image: radial-gradient(circle at 100px 100%, #151435, #262370);
+  }
+  
+.bg-form {
+    @apply  mt-1 block w-full py-3 px-4 bg-gray-200;
+}
+
+.bg-auth {
+    background-image: radial-gradient(ellipse at center, #60ec44, #08366b);
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .form-auth{
+      @apply w-full py-1 px-4 rounded-full bg-gray-400 outline-none;
+
+      &:focus{
+        @apply bg-gray-300;
+      } 
+      &.is-error{
+        @apply bg-red-300 border border-red-600;
+      } 
+    }
+}
+/*    @apply bg-gray-400 py-3 px-4 w-full;
+   
+    &:focus{
+        @apply bg-gray-500;
+    }
+     @apply form-input mt-1 block;
+}*/
